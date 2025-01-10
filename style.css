@@ -87,6 +87,19 @@ img {
   justify-content: center;
 }
 
+.banniere .img {
+  width: 1150px;
+  height: 850px;
+  position: relative;
+  margin-bottom: 25px;
+  /* background: red; */
+}
+
+.banniere .img img {
+  position: absolute;
+  top: 0px;
+}
+
 .banniere img {
   width: 75%;
   position: relative;
@@ -174,7 +187,8 @@ img {
 }
 
 .news-item {
-  width: 24%;
+  flex: 1 1 calc(25% - 20px); /* Adjust the width to ensure wrapping */
+  min-width: 200px; /* Ensure a minimum width for smaller screens */
   padding: 16px;
 }
 
